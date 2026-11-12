@@ -1,9 +1,13 @@
-function abrir(){
-    document.getElementById('wrap-open').style.display = "none"
-    document.getElementById('menu-mobile').style.display = "flex"
+function openMenu(){
+    var abrirMenu = document.getElementById('menu-mobile')
+    abrirMenu.style.display = 'flex'
+    var sanduiche = document.getElementById('wrap-open')
+    sanduiche.style.display = 'none'
 }
 
 function fechar(){
-    document.getElementById('wrap-open').style.display = "flex"
-    document.getElementById('menu-mobile').style.display = "none"
+    var abrirMenu = document.getElementById('menu-mobile')
+    abrirMenu.style.display = 'none'
+    var sanduiche = document.getElementById('wrap-open')
+    sanduiche.style.display = 'flex'
 }
